@@ -5,7 +5,14 @@
         <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
-    <Resources />
+    <Resources>
+        <File name="97primus1" src="97primus1.wav" />
+        <File name="97primus2" src="97primus2.wav" />
+        <File name="97primus3" src="97primus3.wav" />
+        <File name="97primus4" src="97primus4.wav" />
+        <File name="97primus5" src="97primus5.wav" />
+        <File name="97primus6" src="97primus6.wav" />
+    </Resources>
     <Topics />
     <IgnoredPaths />
 </Package>
