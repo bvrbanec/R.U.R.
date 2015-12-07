@@ -14,7 +14,7 @@
         <Timeline enable="0">
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram>
+                    <Diagram scale="84.0896">
                         <Box name="Say" id="4" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="512" y="586">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
@@ -209,7 +209,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>8</language>
+                                                    <language>9</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -418,7 +418,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>8</language>
+                                                    <language>9</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -627,7 +627,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>8</language>
+                                                    <language>9</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -660,63 +660,8 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
-        data = my_socket.recv(512)
-        my_socket.send('Recv: '+data)
-        self.onReady() # activate output of the box]]>
-</content>
-                            </script>
-                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                            <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
-                            <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
-                        </Box>
-                        <Box name="Salji signal" id="1" localization="8" tooltip="Posalje signal na server da je robot zavrsio s radom." x="1185" y="631">
-                            <bitmap>media/images/box/box-python-script.png</bitmap>
-                            <script language="4">
-                                <content>
-                                    <![CDATA[import socket
-class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        pass
-
-    def onUnload(self):
-        #~ puts code for box cleanup here
-        pass
-
-    def onInput_onSet(self):
-        my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.111', 8072))
-        my_socket.send('Done')
-        self.onReady() # activate output of the box]]>
-</content>
-                            </script>
-                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                            <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
-                            <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
-                        </Box>
-                        <Box name="Cekaj signal" id="5" localization="8" tooltip="Ceka signal od servera da krene" x="78" y="51">
-                            <bitmap>media/images/box/box-python-script.png</bitmap>
-                            <script language="4">
-                                <content>
-                                    <![CDATA[import socket
-class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        pass
-
-    def onUnload(self):
-        #~ puts code for box cleanup here
-        pass
-
-    def onInput_onSet(self):
-        my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.111', 8072))
         data = my_socket.recv(512)
         my_socket.send('Recv: '+data)
         self.onReady() # activate output of the box]]>
@@ -828,7 +773,7 @@ class MyClass(GeneratedClass):
 
 		self.tts = ALProxy("ALTextToSpeech")
 		self.sentences = {
-			"Arabic" : " مرحبا ",
+			"Arabic" : "  ",
 			"Czech" : " Ahoj ",
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
@@ -858,7 +803,7 @@ class MyClass(GeneratedClass):
                                                 </script>
                                                 <pluginContent>
                                                     <arabic>
-                                                        <![CDATA[مرحبا]]>
+                                                        <![CDATA[]]>
 </arabic>
                                                     <czech>
                                                         <![CDATA[Ahoj]]>
@@ -922,7 +867,7 @@ Look at yourself.]]>
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>5</language>
+                                                    <language>6</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1039,7 +984,7 @@ class MyClass(GeneratedClass):
 
 		self.tts = ALProxy("ALTextToSpeech")
 		self.sentences = {
-			"Arabic" : " مرحبا ",
+			"Arabic" : "  ",
 			"Czech" : " Ahoj ",
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
@@ -1069,7 +1014,7 @@ class MyClass(GeneratedClass):
                                                 </script>
                                                 <pluginContent>
                                                     <arabic>
-                                                        <![CDATA[مرحبا]]>
+                                                        <![CDATA[]]>
 </arabic>
                                                     <czech>
                                                         <![CDATA[Ahoj]]>
@@ -1131,7 +1076,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>5</language>
+                                                    <language>6</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1248,7 +1193,7 @@ class MyClass(GeneratedClass):
 
 		self.tts = ALProxy("ALTextToSpeech")
 		self.sentences = {
-			"Arabic" : " مرحبا ",
+			"Arabic" : "  ",
 			"Czech" : " Ahoj ",
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
@@ -1278,7 +1223,7 @@ class MyClass(GeneratedClass):
                                                 </script>
                                                 <pluginContent>
                                                     <arabic>
-                                                        <![CDATA[مرحبا]]>
+                                                        <![CDATA[]]>
 </arabic>
                                                     <czech>
                                                         <![CDATA[Ahoj]]>
@@ -1340,7 +1285,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>5</language>
+                                                    <language>6</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1457,7 +1402,7 @@ class MyClass(GeneratedClass):
 
 		self.tts = ALProxy("ALTextToSpeech")
 		self.sentences = {
-			"Arabic" : " مرحبا ",
+			"Arabic" : "  ",
 			"Czech" : " Ahoj ",
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
@@ -1487,7 +1432,7 @@ class MyClass(GeneratedClass):
                                                 </script>
                                                 <pluginContent>
                                                     <arabic>
-                                                        <![CDATA[مرحبا]]>
+                                                        <![CDATA[]]>
 </arabic>
                                                     <czech>
                                                         <![CDATA[Ahoj]]>
@@ -1549,7 +1494,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>5</language>
+                                                    <language>6</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1666,7 +1611,7 @@ class MyClass(GeneratedClass):
 
 		self.tts = ALProxy("ALTextToSpeech")
 		self.sentences = {
-			"Arabic" : " مرحبا ",
+			"Arabic" : "  ",
 			"Czech" : " Ahoj ",
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
@@ -1696,7 +1641,7 @@ class MyClass(GeneratedClass):
                                                 </script>
                                                 <pluginContent>
                                                     <arabic>
-                                                        <![CDATA[مرحبا]]>
+                                                        <![CDATA[]]>
 </arabic>
                                                     <czech>
                                                         <![CDATA[Ahoj]]>
@@ -1758,7 +1703,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>5</language>
+                                                    <language>6</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1791,10 +1736,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
-        my_socket.send('Recv: '+data)
         self.onReady() # activate output of the box]]>
 </content>
                             </script>
@@ -1820,7 +1764,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         my_socket.send('Recv: '+data)
@@ -1831,7 +1775,7 @@ class MyClass(GeneratedClass):
                             <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
                             <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
                         </Box>
-                        <Box name="Cekaj signal (1)" id="8" localization="8" tooltip="Ceka signal od servera da krene" x="383" y="75">
+                        <Box name="Posalji pa cekaj (1)" id="13" localization="8" tooltip="Posalje signal serveru da je zavrsio s radom i ceka potvrdu od servera da nastavi s radom." x="85" y="167">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1849,9 +1793,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.send('Done')
         data = my_socket.recv(512)
-        my_socket.send('Recv: '+data)
         self.onReady() # activate output of the box]]>
 </content>
                             </script>
@@ -1859,7 +1803,7 @@ class MyClass(GeneratedClass):
                             <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
                             <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
                         </Box>
-                        <Box name="Cekaj signal (2)" id="10" localization="8" tooltip="Ceka signal od servera da krene" x="748" y="93">
+                        <Box name="Posalji pa cekaj (2)" id="5" localization="8" tooltip="Posalje signal serveru da je zavrsio s radom i ceka potvrdu od servera da nastavi s radom." x="376" y="72">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1877,9 +1821,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.send('Done')
         data = my_socket.recv(512)
-        my_socket.send('Recv: '+data)
         self.onReady() # activate output of the box]]>
 </content>
                             </script>
@@ -1887,7 +1831,7 @@ class MyClass(GeneratedClass):
                             <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
                             <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
                         </Box>
-                        <Box name="Cekaj signal (3)" id="17" localization="8" tooltip="Ceka signal od servera da krene" x="1116" y="26">
+                        <Box name="Posalji pa cekaj (3)" id="8" localization="8" tooltip="Posalje signal serveru da je zavrsio s radom i ceka potvrdu od servera da nastavi s radom." x="763" y="96">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -1905,9 +1849,65 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.send('Done')
         data = my_socket.recv(512)
-        my_socket.send('Recv: '+data)
+        self.onReady() # activate output of the box]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
+                            <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
+                        </Box>
+                        <Box name="Posalji pa cekaj (6)" id="10" localization="8" tooltip="Posalje signal serveru da je zavrsio s radom i ceka potvrdu od servera da nastavi s radom." x="1106" y="107">
+                            <bitmap>media/images/box/box-python-script.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[import socket
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        pass
+
+    def onUnload(self):
+        #~ puts code for box cleanup here
+        pass
+
+    def onInput_onSet(self):
+        my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
+        self.onReady() # activate output of the box]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
+                            <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
+                        </Box>
+                        <Box name="Posalji pa cekaj (7)" id="1" localization="8" tooltip="Posalje signal serveru da je zavrsio s radom i ceka potvrdu od servera da nastavi s radom." x="1173" y="641">
+                            <bitmap>media/images/box/box-python-script.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[import socket
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        pass
+
+    def onUnload(self):
+        #~ puts code for box cleanup here
+        pass
+
+    def onInput_onSet(self):
+        my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                             </script>
@@ -1918,19 +1918,19 @@ class MyClass(GeneratedClass):
                         <Link inputowner="7" indexofinput="2" outputowner="4" indexofoutput="4" />
                         <Link inputowner="6" indexofinput="2" outputowner="7" indexofoutput="4" />
                         <Link inputowner="3" indexofinput="2" outputowner="6" indexofoutput="3" />
-                        <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="4" />
-                        <Link inputowner="5" indexofinput="2" outputowner="0" indexofoutput="2" />
-                        <Link inputowner="2" indexofinput="2" outputowner="5" indexofoutput="3" />
                         <Link inputowner="15" indexofinput="2" outputowner="12" indexofoutput="4" />
                         <Link inputowner="14" indexofinput="2" outputowner="15" indexofoutput="3" />
                         <Link inputowner="16" indexofinput="2" outputowner="14" indexofoutput="4" />
-                        <Link inputowner="8" indexofinput="2" outputowner="2" indexofoutput="4" />
-                        <Link inputowner="9" indexofinput="2" outputowner="8" indexofoutput="3" />
-                        <Link inputowner="10" indexofinput="2" outputowner="9" indexofoutput="4" />
-                        <Link inputowner="11" indexofinput="2" outputowner="10" indexofoutput="3" />
-                        <Link inputowner="17" indexofinput="2" outputowner="11" indexofoutput="4" />
-                        <Link inputowner="12" indexofinput="2" outputowner="17" indexofoutput="3" />
                         <Link inputowner="4" indexofinput="2" outputowner="16" indexofoutput="3" />
+                        <Link inputowner="13" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="2" indexofinput="2" outputowner="13" indexofoutput="3" />
+                        <Link inputowner="5" indexofinput="2" outputowner="2" indexofoutput="4" />
+                        <Link inputowner="9" indexofinput="2" outputowner="5" indexofoutput="3" />
+                        <Link inputowner="8" indexofinput="2" outputowner="9" indexofoutput="4" />
+                        <Link inputowner="11" indexofinput="2" outputowner="8" indexofoutput="3" />
+                        <Link inputowner="10" indexofinput="2" outputowner="11" indexofoutput="4" />
+                        <Link inputowner="12" indexofinput="2" outputowner="10" indexofoutput="3" />
+                        <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="4" />
                         <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="3" />
                     </Diagram>
                 </BehaviorKeyframe>
