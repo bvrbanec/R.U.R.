@@ -225,7 +225,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>7</language>
+                                                                        <language>8</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -435,7 +435,7 @@ Man, you shall kill neither of us! ]]>
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>7</language>
+                                                                        <language>8</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -644,7 +644,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>7</language>
+                                                                        <language>8</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -677,10 +677,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -706,8 +705,8 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        my_socket.send('Im done')
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
@@ -734,10 +733,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -939,7 +937,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>5</language>
+                                                                        <language>6</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -1283,10 +1281,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -1490,7 +1487,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>5</language>
+                                                                        <language>6</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2037,7 +2034,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>5</language>
+                                                                        <language>6</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2212,10 +2209,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -2241,10 +2237,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -2446,7 +2441,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>5</language>
+                                                                        <language>6</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -2764,10 +2759,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -2970,7 +2964,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>5</language>
+                                                                        <language>6</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -3465,7 +3459,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>5</language>
+                                                                        <language>6</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -3835,10 +3829,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -3864,10 +3857,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -4070,7 +4062,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>7</language>
+                                                                        <language>8</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -4103,10 +4095,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
@@ -4308,7 +4299,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>7</language>
+                                                                        <language>8</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -4341,8 +4332,8 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        my_socket.send('Im done')
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
@@ -4545,7 +4536,7 @@ class MyClass(GeneratedClass):
                                                                         <chinese>
                                                                             <![CDATA[]]>
 </chinese>
-                                                                        <language>7</language>
+                                                                        <language>8</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                                     <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -4578,10 +4569,9 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
-        while True:
-            data = my_socket.recv(512)
-            break
+        my_socket.connect(('192.168.1.111', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
 </content>
                                                 </script>
