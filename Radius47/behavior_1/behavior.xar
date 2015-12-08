@@ -33,7 +33,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -223,7 +223,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -413,7 +413,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -603,7 +603,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -793,7 +793,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -983,7 +983,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -1173,7 +1173,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -1363,7 +1363,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -1553,7 +1553,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.connect(('192.168.1.112', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
