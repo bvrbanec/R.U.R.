@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="nezadovoljnapoza-negiranje-e3e2e3">
+ <names>
+  <name lang="en_US">Nezadovoljna poza-negiranje</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>
