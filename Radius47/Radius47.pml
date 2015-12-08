@@ -3,6 +3,7 @@
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="." xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
@@ -14,6 +15,7 @@
         <File name="47radius5b" src="Radius/47radius5b.wav" />
         <File name="47radius6" src="Radius/47radius6.wav" />
         <File name="47radius7" src="Radius/47radius7.wav" />
+        <File name="" src=".metadata" />
     </Resources>
     <Topics />
     <IgnoredPaths />
