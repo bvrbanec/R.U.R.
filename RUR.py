@@ -239,5 +239,7 @@ try:
     x=raw_input()
     primus.send('bok')
 
+    serversocket.close()
+    
 finally:
     serversocket.close()

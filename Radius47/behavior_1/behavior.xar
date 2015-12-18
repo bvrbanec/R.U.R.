@@ -33,7 +33,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.connect(('192.168.1.110', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -413,7 +413,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.connect(('192.168.1.110', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -949,7 +949,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.connect(('192.168.1.110', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -1615,7 +1615,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.connect(('192.168.1.110', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -2151,7 +2151,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.connect(('192.168.1.110', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -2505,7 +2505,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.connect(('192.168.1.110', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -2885,7 +2885,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.connect(('192.168.1.110', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -3343,7 +3343,7 @@ class MyClass(GeneratedClass):
 
     def onInput_onSet(self):
         my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        my_socket.connect(('192.168.1.112', 8072))
+        my_socket.connect(('192.168.1.110', 8072))
         my_socket.send('Done')
         data = my_socket.recv(512)
         self.onReady() # activate output of the box]]>
@@ -3353,7 +3353,35 @@ class MyClass(GeneratedClass):
                             <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
                             <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
                         </Box>
-                        <Box name="Timeline" id="18" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="60" y="25">
+                        <Box name="cekaj (8)" id="16" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="186" y="489">
+                            <bitmap>media/images/box/box-python-script.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[import socket
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        pass
+
+    def onUnload(self):
+        #~ puts code for box cleanup here
+        pass
+
+    def onInput_onSet(self):
+        my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        my_socket.connect(('192.168.1.110', 8072))
+        my_socket.send('Done')
+        data = my_socket.recv(512)
+        self.onReady() # activate output of the box]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onSet" type="1" type_size="1" nature="2" inner="0" tooltip="" id="2" />
+                            <Output name="onReady" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
+                        </Box>
+                        <Box name="Timeline (1)" id="17" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="58" y="476">
                             <bitmap>media/images/box/movement/move.png</bitmap>
                             <script language="4">
                                 <content>
@@ -3452,8 +3480,6 @@ class MyClass(GeneratedClass):
                                 </ActuatorList>
                             </Timeline>
                         </Box>
-                        <Link inputowner="18" indexofinput="2" outputowner="0" indexofoutput="2" />
-                        <Link inputowner="1" indexofinput="2" outputowner="18" indexofoutput="4" />
                         <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
                         <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="4" />
                         <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="3" />
@@ -3469,6 +3495,9 @@ class MyClass(GeneratedClass):
                         <Link inputowner="14" indexofinput="2" outputowner="13" indexofoutput="3" />
                         <Link inputowner="15" indexofinput="2" outputowner="14" indexofoutput="4" />
                         <Link inputowner="0" indexofinput="4" outputowner="15" indexofoutput="3" />
+                        <Link inputowner="16" indexofinput="2" outputowner="17" indexofoutput="4" />
+                        <Link inputowner="17" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="1" indexofinput="2" outputowner="16" indexofoutput="3" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
