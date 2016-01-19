@@ -14,6 +14,12 @@ try:
     time.sleep(5)
     helena, address1 = serversocket.accept()        ##pocetna spajanja
     print(helena,address1)
+
+    x='nesto'
+    while (x!='kreni'):
+        primus.send('whats up')         # what
+        primus, address2 = serversocket.accept()
+        x=raw_input()
     
     x=raw_input()       ##kreni s pretstavom
     helena.send('helena')           #Primus look
